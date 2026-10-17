@@ -1,0 +1,14 @@
+services:
+  student-app:
+    build: .
+    image: abdiraman-erasyl-devops
+    container_name: abdiraman-erasyl-container
+
+    environment:
+      STUDENT_NAME: Erasyl
+      STUDENT_SURNAME: Abdiraman
+      STUDENT_GROUP: IT-2310
+      STUDENT_ID: "3833"
+
+    ports:
+      - "8080:8080"
